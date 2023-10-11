@@ -23,7 +23,7 @@ public class Main {
         //Визначили кількість робочих годин в дні
         int workHours = Integer.parseInt(args[2]);
         //Визначили місяць
-        int monthNov = month[11] = Integer.parseInt(args[3]);
+        int monthNov = Integer.parseInt(args[3]);
         // Виводимо номер місяця(1-12), вартість години та вісоток податку.
         System.out.println(Arrays.toString(month) + " -> передік номерів місяців");
         System.out.println(hourCost + " долларів за годину");
