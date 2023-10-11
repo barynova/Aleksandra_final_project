@@ -22,6 +22,8 @@ public class Main {
         double tax = Double.parseDouble(args[1]);
         //Визначили кількість робочих годин в дні
         int workHours = Integer.parseInt(args[2]);
+        //Визначили місяць
+        int monthNov = month[11] = Integer.parseInt(args[3]);
         // Виводимо номер місяця(1-12), вартість години та вісоток податку.
         System.out.println(Arrays.toString(month) + " -> передік номерів місяців");
         System.out.println(hourCost + " долларів за годину");
@@ -30,12 +32,12 @@ public class Main {
         //Розраховуємо зарплату на місяць без податку (для 11 місяця Листопада хай буде) метод1
         int daysNov = workDays[10];
         double salaryWithoutTax = calculateSalaryWithoutTax(daysNov, workHours, hourCost);
-        System.out.println("Зарплата за Листопад без урахування податку = " + salaryWithoutTax);
+        System.out.println("Зарплата за Листопад, " + monthNov+ " місяць, без урахування податку = " + salaryWithoutTax);
 
 
         //Розраховуємо зарплату на місяць з податком (для 11 місяця Листопада також)метод2
         double salaryWithTax = calculateSalaryWithTax(salaryWithoutTax, tax);
-        System.out.println("Зарплата за Листопад з урахуванням податку = " + salaryWithTax);
+        System.out.println("Зарплата за Листопад, " + monthNov+ " місяць, з урахуванням податку = " + salaryWithTax);
     }
 
     public static double calculateSalaryWithoutTax(int days, int workHours, double hourCost) {
