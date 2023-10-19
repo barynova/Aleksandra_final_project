@@ -74,6 +74,7 @@ public class Credit {
         }
 
     }
+
     public double calculatePayment(int months) {
         if (months > 0) {
             double monthlyPercentage = percentage / 12.0 / 100.0;
@@ -86,7 +87,7 @@ public class Credit {
     }
 
 
-    public static void main(String[] args) {
+    public static void totalResult(String[] args) {
         Credit creditAccount = new Credit("22111990", new BigDecimal("100.0"), 20.0, "2 months");
         creditAccount.displayAccountInfo();
 

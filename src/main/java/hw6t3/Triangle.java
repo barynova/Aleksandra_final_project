@@ -1,4 +1,5 @@
 package hw6t3;
+
 //Описати клас трикутник (поля описуєте самостійно) з методами:
 //- геттери
 //- підрахунку периметру трикутника
@@ -18,10 +19,12 @@ public class Triangle {
     public double getSide1() {
         return this.side1;
     }
+
     //Геттер side2
     public double getSide2() {
         return this.side2;
     }
+
     //Геттер side3
     public double getSide3() {
         return this.side3;
@@ -34,10 +37,11 @@ public class Triangle {
 
     //Площа √(півпериметр * (півпериметр - сторона1) * (півпериметр - сторона2) * (півпериметр - сторона3))
     public double calculateSquare() {
-        double halfPerimeter = calculatePerimeter()/2;
+        double halfPerimeter = calculatePerimeter() / 2;
         return Math.sqrt(halfPerimeter * (halfPerimeter - side1) * (halfPerimeter - side2) * (halfPerimeter - side3));
     }
-    public static void main(String[] args) {
+
+    public static void showInfo(String[] args) {
         Triangle triangle = new Triangle(3.0, 4.0, 5.0);
 
         System.out.println("Side1: " + triangle.getSide1());

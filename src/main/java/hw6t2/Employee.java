@@ -17,17 +17,19 @@ public class Employee {
     public SalaryCalculator calculator = new SalaryCalculator();
 
 
-// Конструктор
-private Employee (String lastName, String firstName, String job, double hourCost) {
-this.lastName = lastName;
-this.firstName = firstName;
-this.job = job;
-this.hourCost = hourCost;
-}
+    // Конструктор
+    private Employee(String lastName, String firstName, String job, double hourCost) {
+        this.lastName = lastName;
+        this.firstName = firstName;
+        this.job = job;
+        this.hourCost = hourCost;
+    }
+
     //Геттер lastName
     public String lastName() {
         return this.lastName;
     }
+
     //Сеттер lastName
     public void setLastName(String lastName) {
         this.lastName = lastName;
@@ -37,6 +39,7 @@ this.hourCost = hourCost;
     public String getFirstName(String firstName) {
         return this.firstName;
     }
+
     //Сеттер firstName
     public void setFirstName(String firstName) {
         this.firstName = firstName;
@@ -46,6 +49,7 @@ this.hourCost = hourCost;
     public String getJob() {
         return this.job;
     }
+
     //Сеттер job
     public void setJob(String job) {
         this.job = job;
@@ -55,6 +59,7 @@ this.hourCost = hourCost;
     public double getHourCost(double taxPercentage, int workHours, int month) {
         return calculator.calculateMonthlySalary(this.hourCost, taxPercentage, workHours, month);
     }
+
     // Сеттер hourCost
     public void setHourCost(double hourCost) {
         this.hourCost = hourCost;

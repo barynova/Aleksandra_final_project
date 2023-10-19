@@ -22,49 +22,54 @@ public class Product {
     boolean availability;
 
 
-//Геттер назва
-public String getName() {
-return this.name;
-}
-//Сеттер назва
-public void setName(String name) {
-this.name = name;
-}
+    //Геттер назва
+    public String getName() {
+        return this.name;
+    }
 
-//Геттер артикул
-public int getArticle() {
-return this.article;
-}
-//Сеттер артикул
-public void setArticle(int article) {
-this.article = article;
-}
+    //Сеттер назва
+    public void setName(String name) {
+        this.name = name;
+    }
 
-//Геттер ціна
-public BigDecimal getCost() {
-return this.cost;
-}
-//Cеттер ціна
-public void setCost(BigDecimal cost){
-this.cost = cost;
-}
+    //Геттер артикул
+    public int getArticle() {
+        return this.article;
+    }
 
-//Геттер опис
-public String getDescription() {
-return this.description;
-}
-//Сеттер опис
-public void setDescription(String description) {
-this.description = description;
-}
+    //Сеттер артикул
+    public void setArticle(int article) {
+        this.article = article;
+    }
 
-//Геттер доступність
-public String getAvailabilityStatus(){
-return this.availability ? "Yes" : "No";
-}
-//Сеттер доступність
-public void setAvailability(boolean availability){
-this.availability = availability;
-}
+    //Геттер ціна
+    public BigDecimal getCost() {
+        return this.cost;
+    }
+
+    //Cеттер ціна
+    public void setCost(BigDecimal cost) {
+        this.cost = cost;
+    }
+
+    //Геттер опис
+    public String getDescription() {
+        return this.description;
+    }
+
+    //Сеттер опис
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    //Геттер доступність
+    public String getAvailabilityStatus() {
+        return this.availability ? "Yes" : "No";
+    }
+
+    //Сеттер доступність
+    public void setAvailability(boolean availability) {
+        this.availability = availability;
+    }
 
 }
