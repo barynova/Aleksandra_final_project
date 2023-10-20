@@ -26,25 +26,6 @@ public class Credit {
         this.accountNumber = accountNumber;
     }
 
-    // Геттер body
-    public BigDecimal getBody() {
-        return body;
-    }
-
-    // Сеттер body
-    public void setBody(BigDecimal body) {
-        this.body = body;
-    }
-
-    // Геттер percentage
-    public double getPercentage() {
-        return percentage;
-    }
-
-    // Сеттер percentage
-    public void setPercentage(double percentage) {
-        this.percentage = percentage;
-    }
 
     // Геттер period
     public int getPeriod() {

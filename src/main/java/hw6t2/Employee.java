@@ -25,25 +25,6 @@ public class Employee {
         this.hourCost = hourCost;
     }
 
-    //Геттер lastName
-    public String lastName() {
-        return this.lastName;
-    }
-
-    //Сеттер lastName
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
-    }
-
-    //Геттер firstName
-    public String getFirstName(String firstName) {
-        return this.firstName;
-    }
-
-    //Сеттер firstName
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
-    }
 
     //Геттер job
     public String getJob() {
