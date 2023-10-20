@@ -1,6 +1,6 @@
 package hw7t1;
 
-public class Triangle extends Figures{
+public class Triangle extends Figure{
 
     double angle;
 

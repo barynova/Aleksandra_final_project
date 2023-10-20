@@ -1,12 +1,12 @@
 package hw7t1;
 
-public class Figures {
+public class Figure {
     protected double side1;
     protected double side2;
     protected double side3;
     protected double side4;
 
-    public Figures() {
+    public Figure () {
         this.side1 = side1;
         this.side2 = side2;
         this.side3 = side3;

@@ -1,6 +1,6 @@
 package hw7t1;
 
-public class Circle extends Figures{
+public class Circle extends Figure{
     private double radius;
 
     public Circle(double radius) {

@@ -1,6 +1,6 @@
 package hw7t1;
 
-public class Quadrangle extends Figures{
+public class Quadrangle extends Figure{
 
     double width;
     double height;
