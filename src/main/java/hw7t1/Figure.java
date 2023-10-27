@@ -5,13 +5,7 @@ public class Figure {
     protected double side2;
     protected double side3;
     protected double side4;
-
-    public Figure () {
-        this.side1 = side1;
-        this.side2 = side2;
-        this.side3 = side3;
-        this.side4 = side4;
-    }
+    
 
     // Getter and setter methods for side1, side2, side3, and side4
     public double getSide1() {
