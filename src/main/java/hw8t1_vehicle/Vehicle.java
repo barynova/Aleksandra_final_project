@@ -1,5 +1,5 @@
 package hw8t1_vehicle;
 
-    interface Vehicle {
+    interface movable {
         void move();
     }
