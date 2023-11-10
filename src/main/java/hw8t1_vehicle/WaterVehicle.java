@@ -1,6 +1,6 @@
 package hw8t1_vehicle;
 
-abstract public class WaterVehicle implements Vehicle{
+abstract public class WaterVehicle implements movable{
     public String name;
     public WaterVehicle(String name) {
         this.name = name;

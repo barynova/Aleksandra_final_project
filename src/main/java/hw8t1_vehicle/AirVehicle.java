@@ -1,6 +1,6 @@
 package hw8t1_vehicle;
 
-abstract public class AirVehicle implements Vehicle{
+abstract public class AirVehicle implements movable {
     public String name;
 
     public AirVehicle(String name) {
