@@ -16,7 +16,7 @@ public class Main {
         WebDriver driver = new SafariDriver();
 
         // Set Implicit Wait to 60 seconds
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(60));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 
         // Maximize browser window
         driver.manage().window().maximize();
@@ -33,8 +33,10 @@ public class Main {
         // Click on Програмування
         progElement.click();
 
+        //Thread.sleep(5000);
+
         // Find Front-end Basic
-        WebElement frontEndBasicElement = driver.findElement(By.cssSelector(".block-profession_link[href*=\"front-end-basic\"]"));
+        WebElement frontEndBasicElement = driver.findElement(By.cssSelector(".-offline[href*='front-end-basic']"));
 
         JavascriptExecutor jselement3 = (JavascriptExecutor) driver;
         jselement3.executeScript("arguments[0].scrollIntoView();", frontEndBasicElement);
@@ -48,19 +50,12 @@ public class Main {
         // Explicitly wait for the coachesSection to be visible
         WebElement coachesSection = wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".-coaches")));
 
-        // Set Implicit Wait to 60 seconds
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+        ((JavascriptExecutor) driver).executeScript("scrollTo(" + coachesSection.getLocation().x + " , " + coachesSection.getLocation().y + ")");
 
-        // Scroll to coachesSection
-        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", coachesSection);
+       WebElement button = driver.findElement(By.id("coachesShowAllButton"));
+       List<WebElement> coaches = driver.findElements(By.className("coach-card_name"));
 
-        // Find coaches
-        List<WebElement> coaches = wait.until(ExpectedConditions.visibilityOfNestedElementsLocatedBy(coachesSection, By.cssSelector(".coach-list")));
-
-        // Scroll to coaches
-        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", coaches);
-
-        // Print the information about each teacher
+        //Print the information about each teacher
         System.out.println("Викладачі курсу:");
         for (WebElement coach : coaches) {
             System.out.println(coach.getText());
