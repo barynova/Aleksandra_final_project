@@ -2,6 +2,7 @@ import hw14t1.QuadraticEquation;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+//Tests only
 public class QuadraticEquationTest {
 
     @Test

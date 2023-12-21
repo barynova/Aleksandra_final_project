@@ -26,7 +26,6 @@ public class Main {
                 .filter(user -> user.getEmail() != null && !user.getEmail().isEmpty())
                 // Make list
                 .collect(Collectors.toList());
-
         // Group by gender
         Map<String, List<String>> usersGroup = users.stream()
                 .collect(Collectors.groupingBy(User::getGender, Collectors.mapping(User::getName, Collectors.toList())));
@@ -46,7 +45,7 @@ public class Main {
         return arrayOfAge[randomIndex];
     }
 
-    @org.jetbrains.annotations.NotNull
+    //@org.jetbrains.annotations.NotNull
     private static String getRandomEmail() {
         String[] arrayOfDomains = {"gmail.com", "hillel.com", "cocoa.com", "test.com", "kaka.com"};
         String[] arrayOfEmailNames = {"testuser", "Aleksandra", "Ukraine_mark", "prefix123", "metallica"};
